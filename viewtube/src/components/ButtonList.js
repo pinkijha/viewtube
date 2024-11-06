@@ -2,7 +2,9 @@ import React from 'react'
 
 const ButtonList = () => {
   return (
-    <div></div>
+    <div>
+      ButtonList
+    </div>
   )
 }
 

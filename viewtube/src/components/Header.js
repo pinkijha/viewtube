@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+
 
 const Header = () => {
   return (
@@ -10,9 +11,9 @@ const Header = () => {
          src='https://2pink.org/images/logo_viewtube.png'/>
       </div>
 
-      <div className=' col-span-10'>
-        <input className='p-3 ml-[200px] w-1/2 border border-gray-400 rounded-l-full ' placeholder='Search' type='text' />
-        <button className='p-3  border border-gray-400 rounded-r-full'>Search</button>
+      <div className='col-span-10'>
+        <input className='p-2 ml-[200px] w-1/2 border border-gray-400 rounded-l-full ' placeholder='Search' type='text' />
+        <button className='px-5 py-2  border border-gray-400 rounded-r-full bg-gray-100 '>🔍</button>
       </div>
 
       <div>

@@ -17,7 +17,7 @@ const Header = () => {
         <img onClick={() => toggleMenuHandler()} className=' h-8 cursor-pointer' alt='humburger'
         src='https://cdn0.iconfinder.com/data/icons/rounded-basics/24/rounded__menu-512.png'/>
         <img className='ml-5 h-8 cursor-pointer' alt='youtube-logo'
-         src='https://2pink.org/images/logo_viewtube.png'/>
+         src='https://2pink.org/images/logo_viewtube.png'/> 
       </div>
 
       <div className='col-span-10'>

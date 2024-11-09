@@ -19,6 +19,7 @@ const VideoCards = ({ info }) => {
   )
 };
 
+// Higher Order Component
 export const AdVideoCard = ({info}) => {
   return(
     <div className='p-2 m-2 border border-red-900'>

@@ -1,7 +1,7 @@
 import React from 'react'
 
 const VideoCards = ({ info }) => {
-    console.log(info);
+    // console.log(info);
 
     if (!info) return null; // Add a fallback if info is undefined
 
@@ -15,6 +15,14 @@ const VideoCards = ({ info }) => {
         <li>{channelTitle}</li>
         <li>{statistics?.viewCount} Views</li>
       </ul>
+    </div>
+  )
+};
+
+export const AdVideoCard = ({info}) => {
+  return(
+    <div className='p-2 m-2 border border-red-900'>
+      <VideoCards info={info} />
     </div>
   )
 }

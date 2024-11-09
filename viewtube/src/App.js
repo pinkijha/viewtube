@@ -23,7 +23,8 @@ function App() {
       }
     ]
   }
-])
+],
+)
 
   return (
     <Provider store={store}>

@@ -126,7 +126,7 @@ const Comment = ({data}) =>{
     const {name, text, replies} = data;
     return (
         <div className='flex shadow-sm bg-gray-100 p-2 rounded-lg my-2'>
-            <img  className='w-10 h-10'
+            <img  className='w-10 rounded-full h-10'
             alt='user-img' src='https://cdn.pixabay.com/photo/2014/04/02/17/07/user-307993_640.png' />
             <div className='px-3'>
                 <p className='font-bold'>{name}</p>
@@ -139,7 +139,13 @@ const Comment = ({data}) =>{
 const CommentList = ({comments}) =>{
     return comments.map((comment, index) =>(
         // Dont Use index as a key
-        <Comment key={index} data={comment} />
+        <div key={index}>
+            <Comment data={comment} />
+            <div className='pl-5 border border-l-black ml-5'>
+                <CommentList comments={comment.replies}/>
+
+            </div>
+        </div>
     ));
 }
 

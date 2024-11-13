@@ -2,8 +2,9 @@ import React from 'react'
 import Button from './Button'
 
 const ButtonList = () => {
-  const list = ['All', 'News', 'Live', 'Music', 'Watched', 'Cooking',  'Web series',
-    'Gadgets', 'Motivational',  'Reuse', 'Movies', 'Cartoons', 'New to you']
+  const list = ['All', 'News', 'Live', 'Music', 'Watched', 'Cooking',  
+    'Gadgets', 'Motivational',  'Reuse', 'Movies', 'Cartoons', 'Computer',
+  'Dramedy',  'Triller', 'Comedy', 'Meeting', 'ReactJs'    ]
   return (
     <div className='flex'>
       {list.map((item, index) => (

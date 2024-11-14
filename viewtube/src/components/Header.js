@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { toggleMenu } from '../utils/appSlice';
 import { YOUTUBE_SEARCH_API } from '../utils/Constant';
 import { cacheResult } from '../utils/searchSlice';
+import { CiBellOn } from "react-icons/ci";
+import { MdOutlineVideoCall } from "react-icons/md";
 
 
 const Header = () => {
@@ -89,9 +91,15 @@ const Header = () => {
       }
        </div>
 
-      <div>
-        <img className='h-8 col-span-1' alt='user-icon'
+      <div className='flex mx-4'>
+      <span className=' text-2xl cursor-pointer hover:bg-gray-300 p-1 mx-2 rounded-full items-center h-8'>
+      <MdOutlineVideoCall />
+      </span>
+      <span className=' text-2xl cursor-pointer hover:bg-gray-300 p-1 mx-4 rounded-full items-center  h-8'><CiBellOn /></span>
+      
+        <img className='h-8 col-span-1 cursor-pointer mx-2' alt='user-icon'
         src='https://media.istockphoto.com/id/1130884625/vector/user-member-vector-icon-for-ui-user-interface-or-profile-face-avatar-app-in-circle-design.jpg?s=612x612&w=0&k=20&c=1ky-gNHiS2iyLsUPQkxAtPBWH1BZt0PKBB1WBtxQJRE=' />
+        <span className='items-center font-bold my-1 cursor-pointer'>Pinki Jha</span>
       </div>
 
     </div>

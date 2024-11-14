@@ -22,7 +22,7 @@ const VideoContainer = () => {
   return (
     <div className='flex flex-wrap'>
        {/* Higher Order Component */}
-      <AdVideoCard info={videos[0]} /> 
+      {/* <AdVideoCard info={videos[0]} />  */}
       
       {videos.map(video =>  (
        <Link key={video.id} to={'/watch?v='+ video.id} > <VideoCards info= {video} /> </Link>

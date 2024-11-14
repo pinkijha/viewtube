@@ -2,53 +2,53 @@ import React from 'react';
 
 const commentData = [
     {
-        name: "Pinki jha",
-        text: "Awesome! video Content, It was Greatest Video ever. Love from me!!",
+        name: "@Ravi123",
+        text: "Awesome!😊",
         replies: [
 
         ]
     },
     {
-       name: "Pinki jha",
-        text: "Awesome! video Content, It was Greatest Video ever. Love from me!!",
+        name: "@Pinki-jha",
+        text: "Tecnoo bro you are my favourite 😊❤",
         replies: [
-            
+
         ]
     },
     {
-        name: "Pinki jha",
-        text: "Awesome! video Content, It was Greatest Video ever. Love from me!!",
+        name: "@Pooja234",
+        text: "It was Greatest Video ever. Love from me!!",
         replies: [
             {
-                name: "Pinki jha",
+                name: "@akku2334",
                  text: "Awesome! video Content, It was Greatest Video ever. Love from me!!",
                  replies: [
                      
                  ]
              },
              {
-                name: "Pinki jha",
+                name: "@krishu345",
                  text: "Awesome! video Content, It was Greatest Video ever. Love from me!!",
                  replies: [
                      
                  ]
              },
              {
-                name: "Pinki jha",
+                name: "@vivu677",
                  text: "Awesome! video Content, It was Greatest Video ever. Love from me!!",
                  replies: [
                      
                  ]
              },
              {
-                name: "Pinki jha",
+                name: "@shalu998",
                  text: "Awesome! video Content, It was Greatest Video ever. Love from me!!",
                  replies: [
                      
                  ]
              },
              {
-                name: "Pinki jha",
+                name: "@princess77",
                  text: "Awesome! video Content, It was Greatest Video ever. Love from me!!",
                  replies: [
                      
@@ -70,34 +70,34 @@ const commentData = [
                          text: "Awesome! video Content, It was Greatest Video ever. Love from me!!",
                          replies: [
                             {
-                                name: "Pinki jha",
+                                name: "@princess77",
                                  text: "Awesome! video Content, It was Greatest Video ever. Love from me!!",
                                  replies: [
                                      
                                  ]
                              },
                              {
-                                name: "Pinki jha",
+                                name: "@rita44",
                                  text: "Awesome! video Content, It was Greatest Video ever. Love from me!!",
                                  replies: [
                                     {
-                                        name: "Pinki jha",
+                                        name: "@kriti99",
                                          text: "Awesome! video Content, It was Greatest Video ever. Love from me!!",
                                          replies: [
-                                            {
-                                                name: "Pinki jha",
-                                                 text: "Awesome! video Content, It was Greatest Video ever. Love from me!!",
-                                                 replies: [
-                                                    {
-                                                        name: "Pinki jha",
-                                                         text: "Awesome! video Content, It was Greatest Video ever. Love from me!!",
-                                                         replies: [
+                                            // {
+                                            //     name: "@rita44",
+                                            //      text: "Awesome! video Content!",
+                                            //      replies: [
+                                            //         {
+                                            //             name: "@Priyu77",
+                                            //              text: "Awesome! Love from me!!",
+                                            //              replies: [
                                                              
-                                                         ]
-                                                     },
+                                            //              ]
+                                            //          },
                                                      
-                                                 ]
-                                             },
+                                            //      ]
+                                            //  },
                                          ]
                                      },
                                      
@@ -127,7 +127,7 @@ const Comment = ({data}) =>{
     return (
         <div className='flex shadow-sm bg-gray-100 p-2 rounded-lg my-2'>
             <img  className='w-10 rounded-full h-10'
-            alt='user-img' src='https://cdn.pixabay.com/photo/2014/04/02/17/07/user-307993_640.png' />
+            alt='user-img' src='https://cdn-icons-png.flaticon.com/512/1946/1946429.png' />
             <div className='px-3'>
                 <p className='font-bold'>{name}</p>
                 <p>{text}</p>
@@ -152,8 +152,8 @@ const CommentList = ({comments}) =>{
 
 const CommentsContainer = () => {
   return (
-    <div className='m-5 p-3'>
-      <h1 className='text-2xl font-bold p-2'>Comments</h1>
+    <div className=' p-3'>
+      <h1 className='text-2xl font-bold p-2'>49 Comments</h1>
       <CommentList comments={commentData} />
     </div>
   )

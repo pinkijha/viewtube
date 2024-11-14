@@ -7,13 +7,24 @@ const VideoCards = ({ info }) => {
 
     const { snippet, statistics  } = info || {};
     const { channelTitle,  title,  thumbnails } = snippet || {};
+
+    const formatCount = (count) => {
+      if (count >= 1_000_000) {
+        return (count / 1_000_000).toFixed(1) + 'M';
+      } else if (count >= 1_000) {
+        return (count / 1_000).toFixed(1) + 'K';
+      } else {
+        return count.toString();
+      }
+    };
+    
   return (
     <div className='m-2 p-2 w-80 shadow-sm cursor-pointer'>
       <img className=' rounded-lg' alt='thumbnail' src={thumbnails?.medium?.url} />
       <ul>
         <li className='font-bold py-2'>{title}</li>
         <li>{channelTitle}</li>
-        <li>{statistics?.viewCount} Views</li>
+        <li>{formatCount(statistics?.viewCount)} Views</li>
       </ul>
     </div>
   )

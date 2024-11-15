@@ -15,6 +15,9 @@ import { CgMediaLive } from "react-icons/cg";
 import { SiYoutubegaming } from "react-icons/si";
 import { FaRegNewspaper } from "react-icons/fa6";
 import { TfiCup } from "react-icons/tfi";
+import { BiSolidLike } from "react-icons/bi";
+import { BiSolidDislike } from "react-icons/bi";
+import { FaRegBell } from "react-icons/fa6";
 
 
 export {IoMdHome,
@@ -33,4 +36,7 @@ export {IoMdHome,
   SiYoutubegaming,
   FaRegNewspaper,
   TfiCup,
+  BiSolidLike,
+  BiSolidDislike,
+  FaRegBell,
 };

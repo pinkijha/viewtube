@@ -1,4 +1,5 @@
 import React from 'react';
+import Search from './Search';
 
 const commentData = [
     {
@@ -155,6 +156,7 @@ const CommentsContainer = () => {
     <div className=' p-3'>
       <h1 className='text-2xl font-bold p-2'>49 Comments</h1>
       <CommentList comments={commentData} />
+      
     </div>
   )
 }

@@ -37,7 +37,7 @@ const Header = () => {
     const json = await data.json();
     setSuggestions(json[1]);
     // console.log(json[1])
-    console.log(suggestions);
+    // console.log(suggestions);
 
     //Update Cache
     dispatch(

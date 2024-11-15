@@ -1,4 +1,5 @@
 import React from 'react'
+import { formatCount } from './WatchPageVideoData';
 
 const VideoCards = ({ info }) => {
     // console.log(info);
@@ -8,15 +9,7 @@ const VideoCards = ({ info }) => {
     const { snippet, statistics  } = info || {};
     const { channelTitle,  title,  thumbnails } = snippet || {};
 
-    const formatCount = (count) => {
-      if (count >= 1_000_000) {
-        return (count / 1_000_000).toFixed(1) + 'M';
-      } else if (count >= 1_000) {
-        return (count / 1_000).toFixed(1) + 'K';
-      } else {
-        return count.toString();
-      }
-    };
+   
     
   return (
     <div className='m-2 p-2 w-80 shadow-sm cursor-pointer'>

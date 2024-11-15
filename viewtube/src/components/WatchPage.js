@@ -26,7 +26,7 @@ const WatchPage = () => {
         // Find the specific video that matches the videoId
         const video = json.items.find(item => item.id === videoId);
 
-        console.log(json)
+        // console.log(json)
         
         if (video) {
             setVideoData(video);

@@ -9,22 +9,14 @@ const WatchPageVideoData = ({ info }) => {
     const { snippet, statistics } = info;
     const { channelTitle, title, thumbnails } = snippet;
 
-    const formatCount = (count) => {
-        if (count >= 1_000_000) {
-          return (count / 1_000_000).toFixed(1) + 'M';
-        } else if (count >= 1_000) {
-          return (count / 1_000).toFixed(1) + 'K';
-        } else {
-          return count.toString();
-        }
-      };
+ 
 
     return (
         <div>
             <h1 className='font-bold text-xl mt-4'>{title}</h1>
             <div className='flex my-3'>
                 <img alt='channelImg' className='h-9 mx-2 rounded-full'
-                src="https://yt3.ggpht.com/ytc/AIdro_nWMMFKeTe9rh6da4SO77KIY3FTa1Kyd2gdDbZaufxVVfI=s88-c-k-c0x00ffffff-no-rj" />
+                src="https://raw.githubusercontent.com/ViewTube/viewtube/development/.github/images/logo.png" />
                 <h3 className='text-gray-900 text-lg font-medium '>{channelTitle}</h3>
 
                 <div>
@@ -56,6 +48,16 @@ const WatchPageVideoData = ({ info }) => {
             {/* Additional information like views, likes, etc., can go here */}
         </div>
     );
+};
+
+export const formatCount = (count) => {
+  if (count >= 1_000_000) {
+    return (count / 1_000_000).toFixed(1) + 'M';
+  } else if (count >= 1_000) {
+    return (count / 1_000).toFixed(1) + 'K';
+  } else {
+    return count.toString();
+  }
 };
 
 export default WatchPageVideoData;
